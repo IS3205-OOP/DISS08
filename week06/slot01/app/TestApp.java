@@ -1,5 +1,6 @@
 package week06.slot01.app;
 
+import week06.slot01.assets.Chicken;
 import week06.slot01.assets.Map;
 import week06.slot01.assets.Pirate;
 import week06.slot01.assets.Potion;
@@ -38,6 +39,12 @@ public class TestApp {
 		printArena(map);
 		
 		map.movePirate(2, 3, 1, 2);
+		printArena(map);
+		
+		map.addAssets(0, 0, new Chicken(true));
+		printArena(map);
+		
+		map.movePirate(1, 2, 0, 0);
 		printArena(map);
 	}
 	
